@@ -1,0 +1,276 @@
+/* PATH PAGE */
+
+.path-page__text-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.upset-path {
+  display: flex;
+}
+
+.upset-path__side-column {
+  width: 20px;
+  margin: 60px 0px 208px 30px;
+  display: none;
+}
+
+.upset-path__side-column.--left {
+  background-image: url("/ruler.svg");
+  background-repeat: repeat-y;
+  background-size: 20px;
+}
+
+.upset-path__path-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px 20px;
+  flex: 1;
+}
+
+.upset-path__path-list > li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.path-list__pipe {
+  color: grey;
+  margin: 4px;
+  font-size: 0.9em;
+}
+
+.player-row {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.player-row__side-column {
+  flex: 1;
+  text-align: left;
+  font-weight: 800;
+  font-size: 2.4em;
+  color: #9c9c9c;
+  display: flex;
+  align-items: center;
+}
+
+.player-row__side-column.--depth-4 {
+  color: #a29c83;
+}
+
+.player-row__side-column.--depth-3 {
+  color: #ad9f5d;
+}
+
+.player-row__side-column.--depth-2 {
+  color: #c6af44;
+}
+
+.player-row__side-column.--depth-1 {
+  color: #ffda27;
+}
+
+.player-row__side-line {
+  flex: 1;
+  height: 0;
+  border-bottom: 1px solid;
+  margin: 20px;
+  opacity: 0.3;
+}
+
+.player-box {
+  background-color: #0d1010;
+  padding: 15px;
+  border-radius: 15px;
+  border: 1px solid grey;
+}
+
+.player-box__name {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3em;
+}
+
+.player-box__name > img {
+  width: 40px;
+  height: 40px;
+  margin-left: 5px;
+  margin-right: -3px;
+}
+
+.player-box__twittertag {
+  font-size: 0.8em;
+  margin-top: 5px;
+}
+
+.player-box__twittertag > a {
+  color: #59bdcd;
+}
+
+.tournament-box {
+  width: 100%;
+}
+
+.tournament-box__name {
+  font-weight: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tournament-box__name-wifi-icon {
+  width: 20px;
+  height: 20px;
+  fill: #e9f2f2;
+  margin-right: 5px;
+}
+
+.tournament-box__date {
+  font-size: 0.8em;
+  font-style: italic;
+  font-weight: 100;
+}
+
+.tournament-box__result {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tournament-box__result-half {
+  display: flex;
+  align-items: center;
+  flex: 1;
+}
+
+.tournament-box__result-half.--left {
+  justify-content: flex-end;
+}
+
+.tournament-box__result-half.--right {
+  justify-content: flex-start;
+}
+
+.tournament-box__player-tag {
+  font-weight: 600;
+  margin: 0 4px;
+}
+
+.tournament-box__player-score {
+  font-weight: 900;
+  font-size: 1.3em;
+  margin: 0 4px;
+}
+
+.tournament-box__player-score.--winner {
+  color: #7fcc4d;
+}
+
+.tournament-box__player-score.--loser {
+  color: #d03e3e;
+}
+
+.tournament-box__character {
+  width: 20px;
+  height: 20px;
+  margin: 2px;
+}
+
+.path-list__mkleo {
+  height: 300px;
+  position: relative;
+}
+
+.path-list__mkleo .player-row {
+  padding-top: 40px;
+}
+
+.path-list__mkleo .player-row__side-column {
+  display: none;
+}
+
+.path-list__mkleo .player-box {
+  font-size: 1.7em;
+  padding: 25px 90px 30px 30px;
+  margin-right: 30px;
+}
+
+.path-list__mkleo .player-box__twittertag {
+  text-align: left;
+  font-size: 0.5em;
+}
+
+.path-list__mkleo-joker {
+  position: absolute;
+  height: 300px;
+  width: 300px;
+  left: calc(50% - 50px);
+  top: 0;
+}
+
+.sad-kirby {
+  width: 100px;
+  margin-top: 10px;
+}
+
+.path-page__share-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.path-page__share-button {
+  width: 40px;
+  height: 40px;
+  fill: white;
+  margin: 5px;
+  transition: fill 0.2s;
+  cursor: pointer;
+}
+
+.path-page__share-button.--twitter:hover {
+  fill: #08a0e9;
+}
+
+.path-page__share-button.--facebook:hover {
+  fill: #3b5998;
+}
+
+.path-page__share-button.--link:hover {
+  fill: #5db7cd;
+}
+
+@media (min-width: 540px) {
+  .path-list__mkleo .player-box {
+    padding: 25px 100px 30px 40px;
+    margin-right: 70px;
+  }
+  .upset-path__path-list {
+    padding: 20px 30px;
+  }
+  .player-row__side-column {
+    font-size: 3em;
+  }
+}
+
+@media (min-width: 768px) {
+  .upset-path__side-column {
+    display: block;
+  }
+  .path-list__mkleo .player-row__side-column {
+    display: block;
+  }
+  .sad-kirby {
+    width: 150px;
+    margin-top: 20px;
+  }
+}

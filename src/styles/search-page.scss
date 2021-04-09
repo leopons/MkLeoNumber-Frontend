@@ -1,0 +1,183 @@
+/* SEARCH PAGE */
+
+.search-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding-top: 10px;
+}
+
+.search-page > h2 {
+  font-weight: 600;
+  margin: 20px 30px;
+  font-size: 1.4em;
+  color: #59bdcd;
+  text-shadow: 2px 2px black;
+  font-weight: 700;
+}
+
+.search-page > p {
+  margin: 2px 30px;
+  font-size: 0.9em;
+  font-weight: 200;
+}
+
+.search-page > p > b {
+  font-weight: 700;
+}
+
+.search-page__example {
+  margin: 10px;
+  width: 90%;
+}
+
+.search-page__input {
+  width: 290px;
+  height: 45px;
+  max-width: 80%;
+  border-radius: 100px;
+  background-color: transparent;
+  border: 1px solid #59bdcd;
+  text-align: center;
+  color: white;
+  font-weight: 700;
+  font-size: 1.2em;
+  margin-top: 20px;
+}
+
+.search-page__input::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  font-weight: 200;
+  color: #59bdcd;
+  font-size: 1em;
+  opacity: 1; /* Firefox */
+}
+
+.search-page__input:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  font-weight: lighter;
+  font-style: italic;
+  color: #59bdcd;
+  font-size: 1em;
+}
+
+.search-page__input::-ms-input-placeholder {
+  /* Microsoft Edge */
+  font-weight: lighter;
+  font-style: italic;
+  color: #59bdcd;
+  font-size: 1em;
+}
+
+.search-page__input:focus {
+  outline: none;
+  background-color: #393e3e;
+  border-width: 2px;
+}
+
+.search_box {
+  background-color: #0d1010;
+  width: 80%;
+  border-radius: 20px;
+  margin: 15px 0px;
+  border: 1px solid grey;
+  position: relative;
+}
+
+.search-page__fixed-loader {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+a.player-result {
+  text-decoration: none;
+}
+
+.player-result__box {
+  margin: 4px;
+  cursor: pointer;
+  border-radius: 20px;
+  padding: 2px 10px;
+}
+
+.player-result__box:hover {
+  background-color: #202222;
+}
+
+.player-result__tag-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.player-result__tag {
+  font-size: 1.2em;
+  color: white;
+}
+
+.player-result__box:hover .player-result__tag {
+  color: #59bdcd;
+}
+
+.player-result__main-char {
+  width: 30px;
+  height: 30px;
+  margin-left: 5px;
+}
+
+.player-result__last-tournament {
+  font-style: italic;
+  font-size: 0.9em;
+  color: #b0baba;
+}
+
+.player-result__box:hover .player-result__last-tournament {
+  color: #59bdcd;
+}
+
+.search-page__last-data-update {
+  font-style: italic;
+  font-size: 0.8em;
+  font-weight: lighter;
+  margin-top: 10px;
+}
+
+@media (min-width: 540px) {
+  .search-page__example {
+    height: 40px;
+    width: auto;
+  }
+}
+
+@media (min-width: 768px) {
+  .search-page > h2 {
+    font-size: 1.7em;
+    margin: 30px 40px;
+  }
+
+  .search-page > p {
+    font-size: 1em;
+  }
+
+  .search-page__example {
+    height: 50px;
+  }
+}
+
+@media (min-width: 992px) {
+  .search-page > h2 {
+    font-size: 2em;
+  }
+}
+
+@media (min-width: 1200px) {
+  .search-page > h2 {
+    font-size: 2.5em;
+  }
+
+  .search_box {
+    width: 70%;
+  }
+}
