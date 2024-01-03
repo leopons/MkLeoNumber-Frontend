@@ -92,9 +92,7 @@
       <div class="text-content__text">
         If you witness any bugs in the app, same thing, you can tell me on
         twitter. If you prefer you can also raise an issue on
-        <a
-          href="https://github.com/leopons/smash-upset-distance__backend"
-          target="_blank"
+        <a href="https://github.com/leopons/MkLeoNumber-Backend" target="_blank"
           >the public Github repository</a
         >&#8288;.
       </div>

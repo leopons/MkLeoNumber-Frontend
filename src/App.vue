@@ -12,9 +12,7 @@
     <div class="footer__line">
       <router-link to="/about">What is this ?</router-link> -
       <router-link to="/credits">Credits</router-link> -
-      <a
-        href="https://github.com/leopons/smash-upset-distance__backend"
-        target="_blank"
+      <a href="https://github.com/leopons/MkLeoNumber-Backend" target="_blank"
         >Github</a
       >
       <span class="d-none d-md-inline"> - </span>
