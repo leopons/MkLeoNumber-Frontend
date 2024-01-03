@@ -1,7 +1,14 @@
 <template>
   <header>
-    <router-link to="/">Home</router-link>
-    <router-link to="/about">About</router-link>
+    <div>
+      <router-link class="header-title" to="/">Home</router-link>
+      <router-link class="header-title" to="/about">About</router-link>
+    </div>
+    <div>
+      <router-link class="header-title --coffee" to="/support"
+        >Buy me a coffee ♥</router-link
+      >
+    </div>
   </header>
 
   <div class="content-container">

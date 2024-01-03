@@ -2,6 +2,7 @@ import { createRouter, createWebHistory } from "vue-router";
 import SearchPage from "../views/SearchPage.vue";
 import PathPage from "../views/PathPage.vue";
 import AboutPage from "../views/AboutPage.vue";
+import SupportPage from "../views/SupportPage.vue";
 import CreditsPage from "../views/CreditsPage.vue";
 import NotFoundPage from "../views/NotFoundPage.vue";
 
@@ -9,6 +10,7 @@ const routes = [
   { path: "/", component: SearchPage },
   { path: "/path/:id/:option(offline)?", component: PathPage },
   { path: "/about", component: AboutPage },
+  { path: "/support", component: SupportPage },
   { path: "/credits", component: CreditsPage },
   { path: "/:pathMatch(.*)*", component: NotFoundPage },
 ];
